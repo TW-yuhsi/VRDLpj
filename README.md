@@ -1,5 +1,10 @@
 # VRDLpj
 
+## kaggle competition
+The Nature Conservancy Fisheries Monitoring
+Can you detect and classify species of fish?
+URL: https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/overview
+
 
 ## Setup
 
@@ -24,15 +29,15 @@ $ wget https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/
 
 • Dataset link
 
+https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data
 
+• GitHub Repository - YOLOX
 
-• GitHub Repository: mmdetection
+https://github.com/Megvii-BaseDetection/YOLOX
 
+• Pretrained model (yolox_s.pth)
 
-
-• Pretrained model
-
-
+https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 
 • Model weights after training 
 
