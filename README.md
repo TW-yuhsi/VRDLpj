@@ -40,6 +40,7 @@ $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp1
 ## Test
 ```bash
 $ python tools/demo_custom.py image -f exps/example/yolox_voc/yolox_voc_s.py -c YOLOX_outputs/yolox_voc_s/best_ckpt.pth --path datasets/test/ --conf 0.25 --nms 0.5 --tsize 640 --save_result --device gpu
+> trained weights saved in YOLOX_outputs_yolox_voc_s folder
 ```
 
 
