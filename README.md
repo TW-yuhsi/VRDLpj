@@ -55,9 +55,7 @@ https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data
 https://github.com/Megvii-BaseDetection/YOLOX
 
 • Pretrained model 
-1. yolox_s.pth
-https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
-
+1. yolox_s.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 2. yolox_x.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_x.pth
 
 • Model weights after training 
