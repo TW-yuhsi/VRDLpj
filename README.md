@@ -59,4 +59,5 @@ https://github.com/Megvii-BaseDetection/YOLOX
 2. yolox_x.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_x.pth
 
 • Model weights after training 
-
+1. yolox_s.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
+2. yolox_x.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
