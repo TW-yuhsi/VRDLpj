@@ -64,6 +64,20 @@ $ python tools/demo.py image -n yolox-s -c weights/yolox_s.pth --path assets/dog
 
 
 
+<details open>
+<summary>Place files to corresponding folders</summary>
+  
+In this repository, put the files in folder named `src` to the corresponding folders in YOLOX.
+  1. put `yolox_voc_s.py` into `YOLOX/exps/example/yolox_voc/`
+  2. put `__init__.py` into `YOLOX/yolox/data/datasets/`
+  3. put `voc_classes.py` into `YOLOX/yolox/data/datasets/`
+  4. put `demo.py` into `YOLOX/tools/`
+  5. put `yolox_s.py` into `YOLOX/exps/defaults/`
+  
+</details>
+
+
+
 
 <details>
 <summary>Convert .txt files to .xlm files</summary>
