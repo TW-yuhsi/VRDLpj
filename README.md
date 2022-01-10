@@ -246,10 +246,10 @@ $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp1
 
 - GitHub Repository - YOLOX: https://github.com/Megvii-BaseDetection/YOLOX
 
-- Pretrained weights
-1. yolox_s.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
-2. yolox_x.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_x.pth
+- Pretrained weights - yolox_s.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 
-- Model weights after training 
-1. yolox_s.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
-2. yolox_x.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
+- Model weights after training - yolox_s.pth
+1. best_ckpt.pth: https://drive.google.com/file/d/1QNV6dPnPR1Ze78pOjSPx-x109SHeAfXu/view?usp=sharing
+2. last_epoch_ckpt.pth: https://drive.google.com/file/d/1vSXoRiNPkoXs0SMoQBOISk3PfQ2fWH8h/view?usp=sharing
+3. last_mosaic_epoch_ckpt.pth: https://drive.google.com/file/d/1IMTA1lxACSGPXBRS60kto07AJxYj_aRG/view?usp=sharing
+4. latest_ckpt.pth: https://drive.google.com/file/d/1y78zEkK1zAXAce_akPgUhNAdP4cuRKQK/view?usp=sharing
