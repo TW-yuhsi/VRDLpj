@@ -41,7 +41,7 @@ $ python tools/demo.py image -n yolox-s -c weights/yolox_s.pth --path assets/dog
 
 
 
-<details >
+<details open>
 <summary>data folder structuer</summary>
   
 ```bash
