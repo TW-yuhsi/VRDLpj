@@ -275,3 +275,5 @@ $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp1
   2. last_epoch_ckpt.pth: https://drive.google.com/file/d/1vSXoRiNPkoXs0SMoQBOISk3PfQ2fWH8h/view?usp=sharing
   3. last_mosaic_epoch_ckpt.pth: https://drive.google.com/file/d/1IMTA1lxACSGPXBRS60kto07AJxYj_aRG/view?usp=sharing
   4. latest_ckpt.pth: https://drive.google.com/file/d/1y78zEkK1zAXAce_akPgUhNAdP4cuRKQK/view?usp=sharing
+
+- Experimental results: https://docs.google.com/spreadsheets/d/1a5eUrHRXmvuFo9m-vMTzDcNTnBLWFRn9HW6NaZbt13k/edit#gid=0
