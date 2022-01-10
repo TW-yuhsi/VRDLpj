@@ -127,18 +127,18 @@ $ python tools/demo_custom.py image -f exps/example/yolox_voc/yolox_voc_s.py -c 
 
 ## Related URLs
 
-• Dataset link
+- Dataset link
 
 https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data
 
-• GitHub Repository - YOLOX
+- GitHub Repository - YOLOX
 
 https://github.com/Megvii-BaseDetection/YOLOX
 
-• Pretrained model 
+- Pretrained weights
 1. yolox_s.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 2. yolox_x.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_x.pth
 
-• Model weights after training 
+- Model weights after training 
 1. yolox_s.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
 2. yolox_x.pth (best_ckpt.pth, last_epoch_ckpt.pth, latest_ckpt.pth): 
