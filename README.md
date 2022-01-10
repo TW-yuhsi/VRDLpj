@@ -125,10 +125,54 @@ $ cd YOLOX/datasets/
 
 
 
+<details>
+<summary>Change to custom parameters for training</summary>
 
-<details open>
-<summary>Train</summary>
+1. `yolox_voc_s.py`
   
+```bash
+$ cd exps/example/yolox_voc/
+$ vim yolox_voc_s.py
+>> self.num_classes = 8
+>> data_dir='/home/yuhsi44165/NYCU/meeting/YOLOX/datasets/data/VOCdevkit',
+>> image_sets=[('2007', 'trainval')],
+>> data_dir='/home/yuhsi44165/NYCU/meeting/YOLOX/datasets/data/VOCdevkit',
+```
+  
+2. `__init__.py`
+  
+```bash
+$ cd yolox/data/datasets/
+$ vim __init__.py
+>> from .voc_classes import VOC_CLASSES
+```
+  
+3. `voc_classes.py`
+  
+```bash
+$ cd yolox/data/datasets/
+$ vim voc_classes.py
+>> VOC_CLASSES = (
+>>     "ALB",
+>>     "BET",
+>>     "DOL",
+>>     "LAG",
+>>     "NoF",
+>>     "OTHER",
+>>     "SHARK",
+>>     "YFT",
+>> )
+```
+
+</details>
+
+
+
+
+<details>
+
+<summary>Training</summary>
+
 ```bash
 $ cd YOLOX/
 $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp16 -o -c weights/yolox_s.pth
@@ -139,13 +183,55 @@ $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp1
 
 
 
-<details open>
-<summary>Inference</summary>
+<details>
+<summary>Change to custom parameters for inference</summary>
+
+1. `demo.py`
   
 ```bash
+$ cd YOLOX/tools/
+$ vim demo.py
+>> from yolox.data.datasets import COCO_CLASSES, VOC_CLASSES
+>> predictor = Predictor(
+       model, exp, VOC_CLASSES, trt_file, decoder,
+       args.device, args.fp16, args.legacy,
+  )
+```
+  
+2. `yolox_s.py`
+
+```bash
+$ cd YOLOX/exps/defaults/
+$ vim yolox_s.py
+>> self.num_classes = 8
+```
+
+</details>
+
+
+
+
+<details>
+
+<summary>Inference</summary>
+
+```bash
 $ cd YOLOX/
-$ python tools/demo_custom.py image -f exps/example/yolox_voc/yolox_voc_s.py -c YOLOX_outputs/yolox_voc_s/best_ckpt.pth --path datasets/test/ --conf 0.25 --nms 0.5 --tsize 640 --save_result --device gpu
-# trained weights saved in YOLOX_outputs_yolox_voc_s folder
+$ python tools/demo.py image -n yolox-s -c YOLOX_outputs/yolox_voc_s/best_ckpt.pth --path datasets/test/ --conf 0.25 --nms 0.5 --tsize 640 --save_result --device gpu
+```
+
+</details>
+
+
+
+
+<details>
+
+<summary>Resume training</summary>
+
+```bash
+$ cd YOLOX/
+$ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp16 -o -c YOLOX_outputs/yolox_voc_s/latest_ckpt.pth --resume
 ```
 
 </details>
