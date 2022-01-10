@@ -6,9 +6,24 @@ Can you detect and classify species of fish?
 URL: https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/overview
 
 
-## Setup
+
+
+
+## Hardware information
+- System: Linux - Ubuntu 20.04
+- GPU: GeForce GTX 1660 SUPER™ VENTUS XS OC
+- Deep Learning Libraries: PyTorch
+
+
+
+
+<details open>
+
+<summary>Setup</summary>
 
 ```bash
+$ conda create -n yolox python=3.7
+$ conda activate yolox
 $ git clone https://github.com/NVIDIA/apex
 $ cd apex/
 $ pip3 install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
@@ -24,6 +39,9 @@ $ mkdir weights
 $ cd weights/
 $ wget https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 ```
+
+</details>
+
 
 
 
