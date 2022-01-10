@@ -25,12 +25,58 @@ $ cd weights/
 $ wget https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
 ```
 
-## Demo
 
+
+<details>
+<summary>Demo</summary>
+  
 ```bash
 $ cd YOLOX/
 $ python tools/demo.py image -n yolox-s -c weights/yolox_s.pth --path assets/dog.jpg --conf 0.25 --nms 0.45 --tsize 640 --save_result --device gpu
 ```
+
+</details>
+
+
+
+
+
+<details >
+<summary>data folder structuer</summary>
+  
+```bash
+$ cd YOLOX/datastes/
+$ mkdir data
+$ cd data/
+$ mkdir VOCdevkit
+$ cd VOCdevkit/
+$ mkdir VOC2007
+$ cd VOC2007/
+$ mkdir Annotations
+$ mkdir JPEGImages
+$ mkdir ImageSets
+$ cd ImageSets/
+$ mkdir Main
+```
+  
+```bash
+$ cd YOLOX/datasets/
+├── data
+│   ├── VOCdevkit
+│   │   ├── VOC2007
+│   │   │   ├── Annotations    # put test.txt、trainval.txt corresponding .xml files here
+│   │   │   ├── JPEGImages    # put test.txt、trainval.txt corresponding .jpg files here
+│   │   │   ├── ImageSets
+│   │   │   │   ├── Main
+│   │   │   │   │   ├── test.txt    # generated after excute split.py
+│   │   │   │   │   ├── trainval.txt    # generated after excute split.py
+```
+
+</details>
+
+
+
+
 
 ## Train
 ```bash
