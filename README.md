@@ -242,13 +242,9 @@ $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp1
 
 ## Related URLs
 
-- Dataset link
+- Dataset link: https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data
 
-https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data
-
-- GitHub Repository - YOLOX
-
-https://github.com/Megvii-BaseDetection/YOLOX
+- GitHub Repository - YOLOX: https://github.com/Megvii-BaseDetection/YOLOX
 
 - Pretrained weights
 1. yolox_s.pth: https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
