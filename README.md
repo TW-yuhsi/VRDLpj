@@ -24,6 +24,7 @@ URL: https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/overvi
 ```bash
 $ conda create -n yolox python=3.7
 $ conda activate yolox
+
 $ git clone https://github.com/NVIDIA/apex
 $ cd apex/
 $ pip3 install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
@@ -96,16 +97,32 @@ $ cd YOLOX/datasets/
 
 
 
-## Train
+<details open>
+<summary>Train</summary>
+  
 ```bash
+$ cd YOLOX/
 $ python tools/train.py -f exps/example/yolox_voc/yolox_voc_s.py -d 1 -b 8 --fp16 -o -c weights/yolox_s.pth
 ```
 
-## Test
+</details>
+
+
+
+
+<details open>
+<summary>Inference</summary>
+  
 ```bash
+$ cd YOLOX/
 $ python tools/demo_custom.py image -f exps/example/yolox_voc/yolox_voc_s.py -c YOLOX_outputs/yolox_voc_s/best_ckpt.pth --path datasets/test/ --conf 0.25 --nms 0.5 --tsize 640 --save_result --device gpu
 # trained weights saved in YOLOX_outputs_yolox_voc_s folder
 ```
+
+</details>
+
+
+
 
 
 ## Related URLs
