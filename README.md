@@ -97,6 +97,29 @@ $ cd YOLOX/datasets/
 
 
 
+<details>
+<summary>Convert .txt files to .xlm files</summary>
+  
+```bash
+$ cd YOLOX/datasets/
+$ mkdir txt2xml
+$ cd txt2xml/
+```
+  
+put `classes.txt` `convert-yolo-to-xml.py` into txt2xml folder
+  
+```bash
+$ python convert-yolo-to-xml.py
+>> /home/yuhsi44165/NYCU/G2/VRDL/Final_project/train/txtForm/
+>> /home/yuhsi44165/NYCU/G2/VRDL/Final_project/train/classes.txt
+```
+
+</details>
+
+
+
+
+
 <details open>
 <summary>Train</summary>
   
