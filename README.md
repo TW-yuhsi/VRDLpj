@@ -13,7 +13,6 @@ The heavily seafood consumed is threatening the marine ecosystem with 60% of the
 
 
 
-
 ## Hardware information
 - System: Linux - Ubuntu 20.04
 - GPU: GeForce GTX 1660 SUPER™ VENTUS XS OC
