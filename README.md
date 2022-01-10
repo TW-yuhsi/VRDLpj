@@ -8,6 +8,11 @@ URL: https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/overvi
 
 
 
+## Overview of the competition
+The heavily seafood consumed is threatening the marine ecosystem with 60% of the species fished. To keep track of how much fish were reeled out of the sea, the target task is to recognize fish species from images taken by boat onboard cameras. This task is costly if we do it by ourselves. So we want to do this task automatically. But there are some difficulties in this task, such as Fine-grained classification and background noise.
+
+
+
 
 ## Hardware information
 - System: Linux - Ubuntu 20.04
