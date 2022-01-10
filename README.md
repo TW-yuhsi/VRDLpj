@@ -1,5 +1,12 @@
 # VRDLpj
 
+
+Team09
+309553038 楊宗穎
+309653012 陳育熙
+0816035 陳威達
+
+
 ## kaggle competition
 The Nature Conservancy Fisheries Monitoring
 Can you detect and classify species of fish?
