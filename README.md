@@ -169,7 +169,7 @@ $ vim voc_classes.py
 
 
 
-<details>
+<details open>
 
 <summary>Training</summary>
 
@@ -211,7 +211,7 @@ $ vim yolox_s.py
 
 
 
-<details>
+<details open>
 
 <summary>Inference</summary>
 
